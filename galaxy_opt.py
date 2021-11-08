@@ -5,7 +5,7 @@ ti.init(arch=ti.gpu)
 res_x = 1200
 res_y = 600
 pixels = ti.Vector.field(3, dtype=ti.f32, shape=(res_x, res_y))
- # edwedw
+
 @ti.kernel
 def paint(iTime: ti.f32):
     for i, j in pixels:
